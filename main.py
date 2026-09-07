@@ -1,7 +1,5 @@
-
 import streamlit as st
 import tensorflow as tf
-from sklearn.metrics import classification_report
 import numpy as np
 
 @st.cache_resource
@@ -313,4 +311,4 @@ if app_mode=='Disease Prediction':
                   
               else:
                   st.error("Model is Predicting it's a {}".format(class_name[result]))
-                     
+         
